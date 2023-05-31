@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* navegador */
+
+header {
+  display: flex;
+  background-color: #000000;
+  gap: 10%;
+  height: 15vh;
+  align-items: center;
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 3vh;
+}
+
+.logo img {
+  height: 10vh;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 20rem;
+}
+
+.nav-list li a{
+  color: white;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2vh;
+}
+
+.abrir-menu,
+.cerrar-menu {
+  display: none;
+}
+
+ /* Colores de la interfaz de navegacion */
+
+  /* novias y acerca de mi */
+  .menucolordos {
+    background-color: #184B10;
+  }
+
+  /* quinciañeras  */
+  .menucolortres {
+    background-color: #D4E5B5;
+  }
+
+  .colorletratres {
+    color: #193643;
+  }
+
+  /* productos y cursos */
+  .menucolorcuatro {
+    background-color: #F6D6D1;
+  }
+  /* mi trabajo */
+  .menucolorseis {
+    background-color: white;
+  }
+
+  .colorletrasseis {
+    color: black;
+  }
+
+  /* body inicio */
+
+  /* pagina de inicio */
+
+.paguno {
+  display: flex;
+  flex-direction: column;
+  height: 85vh;
+  background-image: url(../imagenes/photomaquillaje.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.botonespacio {
+  display: flex;
+  flex-direction: column;
+  height: 47vh;
+  width: 100vw;
+  justify-content: end;
+  padding-left: 9%;
+
+}
+
+.boton {
+display: flex;
+height: 18%;
+width: 19%;
+align-items: center;
+justify-content: center;
+border: #184B10 solid;
+border-width: 1px;
+text-decoration: none;
+font-family: 'Montserrat', sans-serif;
+font-weight: bold;
+font-size: 150px;
+color: #193643;
+}
+
+
+/* Mi trabajo */
+
+.contenedor-galeria {
+  display: grid;
+  width: 80%;
+  height: 85vh;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 37vh ;
+  grid-gap: 2%;
+  padding: 2%;
+
+}
+
+.galeria{
+  display: flex;
+  justify-content: center;
+}
+
+.imagenesg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: 420px) {
+
+  /* Interfaz de navegacion */
+
+  /* Mi trabajo */
+
+  .contenedor-galeria {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+
+/* menu hamburguesa */
+
+.abrir-menu,
+.cerrar-menu {
+  display: block;
+  border: 0;
+  font-size: 1.25rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.abrir-menu {
+  color: #1c1c1c;
+}
+
+.cerrar-menu {
+  color: #ececec;
+}
+
+.nav {
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 1rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1c1c1c;
+  padding: 2rem;
+  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+}
+
+.nav.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-list {
+  flex-direction: column;
+  align-items: end;
+}
+
+.nav-list li a {
+  color: #ecececec;
+}
+
+}
