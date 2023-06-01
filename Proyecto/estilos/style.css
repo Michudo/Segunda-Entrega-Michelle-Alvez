@@ -45,35 +45,6 @@ header {
   display: none;
 }
 
- /* Colores de la interfaz de navegacion */
-
-  /* novias y acerca de mi */
-  .menucolordos {
-    background-color: #184B10;
-  }
-
-  /* quinciañeras  */
-  .menucolortres {
-    background-color: #D4E5B5;
-  }
-
-  .colorletratres {
-    color: #193643;
-  }
-
-  /* productos y cursos */
-  .menucolorcuatro {
-    background-color: #F6D6D1;
-  }
-  /* mi trabajo */
-  .menucolorseis {
-    background-color: white;
-  }
-
-  .colorletrasseis {
-    color: black;
-  }
-
   /* body inicio */
 
   /* pagina de inicio */
@@ -145,7 +116,7 @@ color: #193643;
 
 
 
-@media (max-width: 420px) {
+@media (max-width: 480px) {
 
   /* Interfaz de navegacion */
 
@@ -156,6 +127,17 @@ color: #193643;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(8, 1fr);
 }
+
+/* interfaz de navegacion */
+
+header {
+  height: 10vh;
+  gap: 30%;
+}
+.logo img{
+  height: 5vh;
+}
+
 
 /* menu hamburguesa */
 
@@ -169,11 +151,11 @@ color: #193643;
 }
 
 .abrir-menu {
-  color: #1c1c1c;
+  color: white;
 }
 
 .cerrar-menu {
-  color: #ececec;
+  color: black;
 }
 
 .nav {
@@ -187,7 +169,7 @@ color: #193643;
   top: 0;
   right: 0;
   bottom: 0;
-  background-color: #1c1c1c;
+  background-color: white;
   padding: 2rem;
   box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
 }
@@ -200,10 +182,35 @@ color: #193643;
 .nav-list {
   flex-direction: column;
   align-items: end;
+  gap: 2rem;
 }
 
 .nav-list li a {
-  color: #ecececec;
+  color: black;
+  font-size: 2vh;
 }
+
+
+/* Body Inicio */
+/* Pagina principal */
+
+.paguno {
+/* background-color: #184B10; */
+height: 90vh;
+background-image: url(/Proyecto/imagenes/photomaquillajechica.jpg);
+background-size: 100%;
+}
+
+.botonespacio {
+/* background-color: blue; */
+height: 45vh;
+}
+
+.boton {
+width: 150px;
+height: 50px;
+font-size: 18px;
+}
+
 
 }
